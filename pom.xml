@@ -150,7 +150,8 @@
         <apromore.metric.plugin.version>1.1</apromore.metric.plugin.version>
         <portal-client.version>1.1</portal-client.version>
 
-        <gemini.blueprint.version>1.0.2.RELEASE</gemini.blueprint.version>
+        <!-- 1.0.2.RELEASE was only on dead SpringSource repo; Central uses org.eclipse.gemini.blueprint:* -->
+        <gemini.blueprint.version>2.0.0.RELEASE</gemini.blueprint.version>
         <httpcomponents.version>4.2.1</httpcomponents.version>
         <prodrift.version>1.1.0</prodrift.version>
         <pax.runner.version>1.7.6</pax.runner.version>
@@ -706,10 +707,10 @@
                 <version>${aspectj.version}</version>
             </dependency>
 
-            <!-- Eclipse Gemini Blueprint (former Spring DM) -->
+            <!-- Eclipse Gemini Blueprint (former Spring DM); Central coordinates -->
             <dependency>
-                <groupId>org.eclipse.gemini</groupId>
-                <artifactId>org.eclipse.gemini.blueprint.extender</artifactId>
+                <groupId>org.eclipse.gemini.blueprint</groupId>
+                <artifactId>gemini-blueprint-extender</artifactId>
                 <version>${gemini.blueprint.version}</version>
                 <exclusions>
                     <exclusion>
@@ -719,8 +720,8 @@
                 </exclusions>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.gemini</groupId>
-                <artifactId>org.eclipse.gemini.blueprint.io</artifactId>
+                <groupId>org.eclipse.gemini.blueprint</groupId>
+                <artifactId>gemini-blueprint-io</artifactId>
                 <version>${gemini.blueprint.version}</version>
                 <exclusions>
                     <exclusion>
@@ -730,8 +731,8 @@
                 </exclusions>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.gemini</groupId>
-                <artifactId>org.eclipse.gemini.blueprint.core</artifactId>
+                <groupId>org.eclipse.gemini.blueprint</groupId>
+                <artifactId>gemini-blueprint-core</artifactId>
                 <version>${gemini.blueprint.version}</version>
                 <exclusions>
                     <exclusion>
