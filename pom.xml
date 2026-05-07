@@ -210,10 +210,10 @@
         <xmlSchema.version>2.0.2</xmlSchema.version>
         <dom4j.version>1.6.1</dom4j.version>
         <wsdl4j.version>1.6.1</wsdl4j.version>
-        <!-- 2.2.11+ is on Maven Central; SpringSource bundle 2.2.0 is no longer hosted -->
+        <!-- 2.2.11+ is on Maven Central; SpringSource JAXB bundles are no longer hosted -->
         <jaxb-xjc.version>2.2.11</jaxb-xjc.version>
-        <jaxb-impl.version>2.2.0</jaxb-impl.version>
-        <jaxb-api.version>2.2.0</jaxb-api.version>
+        <jaxb-impl.version>2.2.11</jaxb-impl.version>
+        <jaxb-api.version>2.2.11</jaxb-api.version>
         <jaxb2-basics.version>0.5.3.MR1</jaxb2-basics.version>
         <jaxb2-basics-runtime.version>0.5.3</jaxb2-basics-runtime.version>
 
@@ -1015,16 +1015,11 @@
                 </exclusions>
             </dependency>
 
-            <!-- JAXB -->
+            <!-- JAXB (javax.xml.bind / GlassFish RI on Maven Central) -->
             <dependency>
                 <groupId>javax.xml.bind</groupId>
-                <artifactId>com.springsource.javax.xml.bind</artifactId>
+                <artifactId>jaxb-api</artifactId>
                 <version>${jaxb-api.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.sun.xml</groupId>
-                <artifactId>com.springsource.com.sun.xml.bind</artifactId>
-                <version>${jaxb-impl.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jvnet.jaxb2_commons</groupId>
@@ -1040,7 +1035,7 @@
             <dependency>
                 <groupId>com.sun.xml.bind</groupId>
                 <artifactId>jaxb-impl</artifactId>
-                <version>${jaxb-xjc.version}</version>
+                <version>${jaxb-impl.version}</version>
             </dependency>
             <!-- jaxb-xjc / jaxb-impl 2.2.11 shade excludes core; Locatable & com.sun.xml.bind.annotation live here -->
             <dependency>

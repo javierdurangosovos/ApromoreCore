@@ -140,7 +140,7 @@
                             <excludeTransitive>false</excludeTransitive>
                             <!-- Those artifacts are OSGI bundles already in Virgo -->
                             <excludeArtifactIds>
-                                com.springsource.javax.xml.bind,
+                                jaxb-api,
                                 javax.persistence,
                                 logback-classic,
                                 logback-core,

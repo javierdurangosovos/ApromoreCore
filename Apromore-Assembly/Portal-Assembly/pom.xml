@@ -98,7 +98,7 @@
                                 org.springframework.expression,org.springframework.jdbc,org.springframework.jms,org.springframework.orm,
                                 org.springframework.oxm,org.springframework.transaction,org.springframework.web,org.springframework.web.servlet,
                                 org.springframework.aspects,org.springframework.context.support,commons-httpclient,javax.persistence,
-                                com.springsource.javax.xml.bind,
+                                jaxb-api,
                             </excludeArtifactIds>
                             <excludeGroupIds>
                                 org.zkoss.zk, org.zkoss.common, org.beanshell

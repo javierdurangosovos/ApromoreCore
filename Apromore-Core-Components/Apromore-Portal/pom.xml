@@ -66,7 +66,7 @@
                             com.springsource.org.apache.httpcomponents.httpclient;version="[4.2.1,4.2.1]",
                             com.springsource.org.apache.httpcomponents.httpcore;version="[4.2.1,4.2.1]",
                             com.springsource.org.apache.xmlbeans;version="[2.4.0,2.4.0]",
-                            com.springsource.com.sun.xml.bind;version="[2.2.0,2.2.0]",
+                            com.sun.xml.bind;version="[2.2.11,3.0.0)",
                             jackson-core-lgpl;version="[1.9.12,2.0.0]",
                             jackson-mapper-lgpl;version="[1.9.12,2.0.0]",
                             org.apromore.manager-ws-model;version="[1.1,1.1]",
@@ -168,12 +168,12 @@
             <artifactId>jaxb-xjc</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.sun.xml</groupId>
-            <artifactId>com.springsource.com.sun.xml.bind</artifactId>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
         </dependency>
         <dependency>
             <groupId>javax.xml.bind</groupId>
-            <artifactId>com.springsource.javax.xml.bind</artifactId>
+            <artifactId>jaxb-api</artifactId>
         </dependency>
 
         <!-- Custom GUI -->

@@ -8,7 +8,7 @@
         <pathelement location="${basedir}/target/editor-platform-extension-bpmn2_0-1.2.jar"/>
         <pathelement location="${basedir}/../diagram core/target/editor-platform-extension-diagram-1.2.jar"/>
         <pathelement location="${basedir}/../../../Apromore-Assembly/Editor-Assembly/target/repository/usr/json-20090211.jar"/>
-        <pathelement location="${basedir}/../../../Apromore-Assembly/Editor-Assembly/target/repository/usr/com.springsource.com.sun.xml.bind-2.2.0.jar"/>
+        <pathelement location="${basedir}/../../../Apromore-Assembly/Editor-Assembly/target/repository/usr/jaxb-impl-2.2.11.jar"/>
         <pathelement location="${basedir}/lib/log4j-1.2.15.jar"/>
     </path>
 
