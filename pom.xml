@@ -209,7 +209,8 @@
         <xmlSchema.version>2.0.2</xmlSchema.version>
         <dom4j.version>1.6.1</dom4j.version>
         <wsdl4j.version>1.6.1</wsdl4j.version>
-        <jaxb-xjc.version>2.2.0</jaxb-xjc.version>
+        <!-- 2.2.11+ is on Maven Central; SpringSource bundle 2.2.0 is no longer hosted -->
+        <jaxb-xjc.version>2.2.11</jaxb-xjc.version>
         <jaxb-impl.version>2.2.0</jaxb-impl.version>
         <jaxb-api.version>2.2.0</jaxb-api.version>
         <jaxb2-basics.version>0.5.3.MR1</jaxb2-basics.version>
@@ -743,7 +744,7 @@
             <!-- Spring Framework dependencies -->
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>org.springframework.core</artifactId>
+                <artifactId>spring-core</artifactId>
                 <version>${spring.version}</version>
                 <exclusions>
                     <exclusion>
@@ -754,7 +755,7 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>org.springframework.beans</artifactId>
+                <artifactId>spring-beans</artifactId>
                 <version>${spring.version}</version>
                 <exclusions>
                     <exclusion>
@@ -765,12 +766,12 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>org.springframework.context</artifactId>
+                <artifactId>spring-context</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>org.springframework.context.support</artifactId>
+                <artifactId>spring-context-support</artifactId>
                 <version>${spring.version}</version>
                 <exclusions>
                     <exclusion>
@@ -781,52 +782,52 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>org.springframework.aop</artifactId>
+                <artifactId>spring-aop</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>org.springframework.aspects</artifactId>
+                <artifactId>spring-aspects</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>org.springframework.expression</artifactId>
+                <artifactId>spring-expression</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>org.springframework.jdbc</artifactId>
+                <artifactId>spring-jdbc</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>org.springframework.jms</artifactId>
+                <artifactId>spring-jms</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>org.springframework.orm</artifactId>
+                <artifactId>spring-orm</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>org.springframework.oxm</artifactId>
+                <artifactId>spring-oxm</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>org.springframework.transaction</artifactId>
+                <artifactId>spring-tx</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>org.springframework.web</artifactId>
+                <artifactId>spring-web</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>org.springframework.web.servlet</artifactId>
+                <artifactId>spring-webmvc</artifactId>
                 <version>${spring.version}</version>
                 <exclusions>
                     <exclusion>
@@ -871,7 +872,7 @@
             <!-- Spring Security -->
             <dependency>
                 <groupId>org.springframework.security</groupId>
-                <artifactId>org.springframework.security.core</artifactId>
+                <artifactId>spring-security-core</artifactId>
                 <version>${spring-security.version}</version>
                 <exclusions>
                     <exclusion>
@@ -882,7 +883,7 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework.security</groupId>
-                <artifactId>org.springframework.security.config</artifactId>
+                <artifactId>spring-security-config</artifactId>
                 <version>${spring-security.version}</version>
                 <exclusions>
                     <exclusion>
@@ -893,7 +894,7 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework.security</groupId>
-                <artifactId>org.springframework.security.web</artifactId>
+                <artifactId>spring-security-web</artifactId>
                 <version>${spring-security.version}</version>
                 <exclusions>
                     <exclusion>
@@ -904,7 +905,7 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework.security</groupId>
-                <artifactId>org.springframework.security.remoting</artifactId>
+                <artifactId>spring-security-remoting</artifactId>
                 <version>${spring-security.version}</version>
                 <exclusions>
                     <exclusion>
@@ -917,7 +918,7 @@
             <!-- Spring Web Services -->
             <dependency>
                 <groupId>org.springframework.ws</groupId>
-                <artifactId>org.springframework.ws</artifactId>
+                <artifactId>spring-ws-core</artifactId>
                 <version>${spring-ws.version}</version>
                 <exclusions>
                     <exclusion>
@@ -928,7 +929,7 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework.ws</groupId>
-                <artifactId>org.springframework.ws.support</artifactId>
+                <artifactId>spring-ws-support</artifactId>
                 <version>${spring-ws.version}</version>
                 <exclusions>
                     <exclusion>
@@ -939,7 +940,7 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework.ws</groupId>
-                <artifactId>org.springframework.xml</artifactId>
+                <artifactId>spring-xml</artifactId>
                 <version>${spring-ws.version}</version>
                 <exclusions>
                     <exclusion>
@@ -1004,15 +1005,21 @@
                 <version>${jaxb2-basics-runtime.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sun.xml</groupId>
-                <artifactId>com.springsource.com.sun.tools.xjc</artifactId>
+                <groupId>com.sun.xml.bind</groupId>
+                <artifactId>jaxb-xjc</artifactId>
                 <version>${jaxb-xjc.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>com.sun.xml</groupId>
-                        <artifactId>com.springsource.com.sun.xml.bind.jaxb1</artifactId>
-                    </exclusion>
-                </exclusions>
+            </dependency>
+            <!-- JAXB RI runtime; XJC-generated sources reference com.sun.xml.bind.* -->
+            <dependency>
+                <groupId>com.sun.xml.bind</groupId>
+                <artifactId>jaxb-impl</artifactId>
+                <version>${jaxb-xjc.version}</version>
+            </dependency>
+            <!-- jaxb-xjc / jaxb-impl 2.2.11 shade excludes core; Locatable & com.sun.xml.bind.annotation live here -->
+            <dependency>
+                <groupId>org.glassfish.jaxb</groupId>
+                <artifactId>jaxb-core</artifactId>
+                <version>${jaxb-xjc.version}</version>
             </dependency>
 
             <!-- Commons -->

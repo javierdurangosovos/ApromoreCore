@@ -57,29 +57,29 @@
         <!-- Spring Dependencies -->
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>org.springframework.beans</artifactId>
+            <artifactId>spring-beans</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>org.springframework.context</artifactId>
+            <artifactId>spring-context</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>org.springframework.context.support</artifactId>
+            <artifactId>spring-context-support</artifactId>
         </dependency>
 
         <!-- Spring-WS dependencies -->
         <dependency>
             <groupId>org.springframework.ws</groupId>
-            <artifactId>org.springframework.xml</artifactId>
+            <artifactId>spring-xml</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.ws</groupId>
-            <artifactId>org.springframework.ws</artifactId>
+            <artifactId>spring-ws-core</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.ws</groupId>
-            <artifactId>org.springframework.ws.support</artifactId>
+            <artifactId>spring-ws-support</artifactId>
         </dependency>
 
         <!-- HTTP Commons, used in the spring config. -->
