@@ -42,6 +42,7 @@
             <groupId>org.apromore</groupId>
             <artifactId>apromore-manager</artifactId>
             <version>1.1</version>
+            <type>bundle</type>
         </dependency>
 
         <!-- Apromore WS Models -->
@@ -106,7 +107,7 @@
         <!-- HTTP Commons, used in the spring config. -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>com.springsource.org.apache.httpcomponents.httpclient</artifactId>
+            <artifactId>httpclient</artifactId>
         </dependency>
 
         <!-- Testing -->
@@ -137,8 +138,8 @@
                             org.springframework.ws;version="[2.1.0.RELEASE,2.1.0.RELEASE]",
                             org.springframework.ws.support;version="[2.1.0.RELEASE,2.1.0.RELEASE]",
                             org.springframework.ws.xml;version="[2.1.0.RELEASE,2.1.0.RELEASE]",
-                            com.springsource.org.apache.httpcomponents.httpclient;version="[4.2.1,4.2.1]",
-                            com.springsource.org.apache.httpcomponents.httpcore;version="[4.2.1,4.2.1]"
+                            org.apache.httpcomponents.httpclient;version="[4.2.1,4.3)",
+                            org.apache.httpcomponents.httpcore;version="[4.2.1,4.3)"
                         </Import-Bundle>
                         <Import-Package>
                             org.springframework.ws.soap,

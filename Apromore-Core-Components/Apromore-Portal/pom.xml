@@ -63,8 +63,8 @@
                         <Embed-Directory>WEB-INF/lib</Embed-Directory>
                         <Bundle-ClassPath>.,{maven-dependencies},WEB-INF/classes</Bundle-ClassPath>
                         <Import-Bundle>
-                            com.springsource.org.apache.httpcomponents.httpclient;version="[4.2.1,4.2.1]",
-                            com.springsource.org.apache.httpcomponents.httpcore;version="[4.2.1,4.2.1]",
+                            org.apache.httpcomponents.httpclient;version="[4.2.1,4.3)",
+                            org.apache.httpcomponents.httpcore;version="[4.2.1,4.3)",
                             com.springsource.org.apache.xmlbeans;version="[2.4.0,2.4.0]",
                             com.sun.xml.bind;version="[2.2.11,3.0.0)",
                             jackson-core-lgpl;version="[1.9.12,2.0.0]",
@@ -191,6 +191,7 @@
             <groupId>org.apromore</groupId>
             <artifactId>apromore-manager</artifactId>
             <version>1.1</version>
+            <type>bundle</type>
         </dependency>
         <dependency>
             <groupId>org.apromore</groupId>
@@ -349,7 +350,7 @@
         <!-- Commons Libraries -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>com.springsource.org.apache.httpcomponents.httpclient</artifactId>
+            <artifactId>httpclient</artifactId>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>

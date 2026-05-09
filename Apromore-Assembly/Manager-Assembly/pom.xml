@@ -34,6 +34,7 @@
             <groupId>org.apromore</groupId>
             <artifactId>apromore-manager</artifactId>
             <version>${project.version}</version>
+            <type>bundle</type>
         </dependency>
 <!--
         <dependency>

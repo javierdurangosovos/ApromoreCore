@@ -523,6 +523,12 @@
             </dependency>
             <dependency>
                 <groupId>org.apromore</groupId>
+                <artifactId>apromore-manager</artifactId>
+                <version>${project.version}</version>
+                <type>bundle</type>
+            </dependency>
+            <dependency>
+                <groupId>org.apromore</groupId>
                 <artifactId>filestore-client</artifactId>
                 <version>${filestore-client.version}</version>
             </dependency>
@@ -1075,12 +1081,12 @@
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>com.springsource.org.apache.httpcomponents.httpclient</artifactId>
+                <artifactId>httpclient</artifactId>
                 <version>${commons.httpclient.version}</version>
                 <exclusions>
                     <exclusion>
-                        <groupId>org.apache.commons</groupId>
-                        <artifactId>com.springsource.org.apache.commons.logging</artifactId>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
                     </exclusion>
                 </exclusions>
             </dependency>

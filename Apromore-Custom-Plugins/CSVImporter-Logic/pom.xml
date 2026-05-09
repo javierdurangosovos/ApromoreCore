@@ -51,6 +51,7 @@
             <groupId>org.apromore</groupId>
             <artifactId>apromore-manager</artifactId>
             <version>${manager-client.version}</version>
+            <type>bundle</type>
         </dependency>
 -->
         <dependency>
