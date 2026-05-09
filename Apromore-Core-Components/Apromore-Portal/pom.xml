@@ -335,7 +335,7 @@
         </dependency>
         <dependency>
             <groupId>javax.mail</groupId>
-            <artifactId>com.springsource.javax.mail</artifactId>
+            <artifactId>mail</artifactId>
         </dependency>
         <dependency>
             <groupId>javax.validation</groupId>
@@ -343,7 +343,7 @@
         </dependency>
         <dependency>
             <groupId>javax.inject</groupId>
-            <artifactId>com.springsource.javax.inject</artifactId>
+            <artifactId>javax.inject</artifactId>
         </dependency>
 
         <!-- Commons Libraries -->

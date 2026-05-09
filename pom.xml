@@ -135,6 +135,7 @@
         <pmd.target.jdk>${java.target.version}</pmd.target.jdk>
         <jdk.version>1.8.0</jdk.version>
         <ant.version>1.8.3</ant.version>
+        <servicemix.ant.version>1.8.4_1</servicemix.ant.version>
 
         <kotlin.version>1.2.41</kotlin.version>
 
@@ -199,7 +200,8 @@
         <validation.version>1.0.0.GA</validation.version>
         <google.guava.version>14.0.1</google.guava.version>
         <json.version>20090211</json.version>
-        <inject.version>1.0.0</inject.version>
+        <inject.version>1</inject.version>
+        <derby.version>10.5.3.0_1</derby.version>
         <sardine.version>5.0.1</sardine.version>
         <jackson.version>1.9.12</jackson.version>
         <xmlbeans.version>2.4.0</xmlbeans.version>
@@ -1125,10 +1127,10 @@
                 <version>${mysql.connector.version}</version>
             </dependency>
 
-            <!-- WSDL / WS dependencies -->
+            <!-- WSDL / WS dependencies (Maven Central; replaces SpringSource bundle) -->
             <dependency>
-                <groupId>javax.wsdl</groupId>
-                <artifactId>com.springsource.javax.wsdl</artifactId>
+                <groupId>wsdl4j</groupId>
+                <artifactId>wsdl4j</artifactId>
                 <version>${wsdl4j.version}</version>
             </dependency>
             <dependency>
@@ -1151,12 +1153,12 @@
             </dependency>
             <dependency>
                 <groupId>javax.mail</groupId>
-                <artifactId>com.springsource.javax.mail</artifactId>
+                <artifactId>mail</artifactId>
                 <version>${javamail.version}</version>
             </dependency>
             <dependency>
                 <groupId>javax.inject</groupId>
-                <artifactId>com.springsource.javax.inject</artifactId>
+                <artifactId>javax.inject</artifactId>
                 <version>${inject.version}</version>
             </dependency>
             <dependency>
@@ -1180,8 +1182,18 @@
             </dependency>
             <dependency>
                 <groupId>org.apache.ant</groupId>
-                <artifactId>com.springsource.org.apache.tools.ant</artifactId>
+                <artifactId>ant</artifactId>
                 <version>${ant.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.servicemix.bundles</groupId>
+                <artifactId>org.apache.servicemix.bundles.ant</artifactId>
+                <version>${servicemix.ant.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.derby</groupId>
+                <artifactId>derby</artifactId>
+                <version>${derby.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.codehaus.jackson</groupId>

@@ -32,7 +32,7 @@
         <!-- Commons -->
         <dependency>
             <groupId>javax.mail</groupId>
-            <artifactId>com.springsource.javax.mail</artifactId>
+            <artifactId>mail</artifactId>
             <scope>provided</scope>
         </dependency>
 
