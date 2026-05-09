@@ -698,12 +698,12 @@
             <!-- AspectJ Runtime and Weaver -->
             <dependency>
                 <groupId>org.aspectj</groupId>
-                <artifactId>com.springsource.org.aspectj.runtime</artifactId>
+                <artifactId>aspectjrt</artifactId>
                 <version>${aspectj.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.aspectj</groupId>
-                <artifactId>com.springsource.org.aspectj.weaver</artifactId>
+                <artifactId>aspectjweaver</artifactId>
                 <version>${aspectj.version}</version>
             </dependency>
 

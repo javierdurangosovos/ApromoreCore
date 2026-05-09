@@ -273,11 +273,11 @@
         <!-- AOP -->
         <dependency>
             <groupId>org.aspectj</groupId>
-            <artifactId>com.springsource.org.aspectj.runtime</artifactId>
+            <artifactId>aspectjrt</artifactId>
         </dependency>
         <dependency>
             <groupId>org.aspectj</groupId>
-            <artifactId>com.springsource.org.aspectj.weaver</artifactId>
+            <artifactId>aspectjweaver</artifactId>
         </dependency>
 
         <!-- Database -->
