@@ -65,7 +65,7 @@
                         <Import-Bundle>
                             org.apache.httpcomponents.httpclient;version="[4.2.1,4.3)",
                             org.apache.httpcomponents.httpcore;version="[4.2.1,4.3)",
-                            com.springsource.org.apache.xmlbeans;version="[2.4.0,2.4.0]",
+                            org.apache.servicemix.bundles.xmlbeans;version="[2.4.0,2.4.1)",
                             com.sun.xml.bind;version="[2.2.11,3.0.0)",
                             jackson-core-lgpl;version="[1.9.12,2.0.0]",
                             jackson-mapper-lgpl;version="[1.9.12,2.0.0]",
@@ -160,8 +160,8 @@
             <artifactId>jackson-mapper-lgpl</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.apache.xmlbeans</groupId>
-            <artifactId>com.springsource.org.apache.xmlbeans</artifactId>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.xmlbeans</artifactId>
         </dependency>
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
@@ -220,8 +220,8 @@
         </dependency>
          <!--Replacement for the org.javassist from the hibernate package-->
         <dependency>
-            <groupId>org.jboss.javassist</groupId>
-            <artifactId>com.springsource.javassist</artifactId>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
         </dependency>
 
         <!-- APIs -->
@@ -340,7 +340,7 @@
         </dependency>
         <dependency>
             <groupId>javax.validation</groupId>
-            <artifactId>com.springsource.javax.validation</artifactId>
+            <artifactId>validation-api</artifactId>
         </dependency>
         <dependency>
             <groupId>javax.inject</groupId>

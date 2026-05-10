@@ -182,7 +182,8 @@
         <javamail.version>1.4.5</javamail.version>
         <activation.version>1.1.1</activation.version>
         <asm.version>3.2.0</asm.version>
-        <javassist.version>3.15.0.GA</javassist.version>
+        <!-- Central uses hyphen; old SpringSource bundle is no longer hosted -->
+        <javassist.version>3.15.0-GA</javassist.version>
         <aopalliance.version>1.0.0</aopalliance.version>
         <!-- Eclipse AspectJ on Central uses 1.6.12, not the old SpringSource 1.6.12.RELEASE suffix -->
         <aspectj.version>1.6.12</aspectj.version>
@@ -204,7 +205,8 @@
         <derby.version>10.5.3.0_1</derby.version>
         <sardine.version>5.0.1</sardine.version>
         <jackson.version>1.9.12</jackson.version>
-        <xmlbeans.version>2.4.0</xmlbeans.version>
+        <!-- ServiceMix OSGi bundle wraps Apache XmlBeans 2.4.0; resolves from Central -->
+        <xmlbeans.version>2.4.0_5</xmlbeans.version>
 
         <zk.version>8.6.0.1</zk.version>
         <zk.spring.version>3.1</zk.spring.version>
@@ -699,8 +701,8 @@
                 <version>${asm.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.jboss.javassist</groupId>
-                <artifactId>com.springsource.javassist</artifactId>
+                <groupId>org.javassist</groupId>
+                <artifactId>javassist</artifactId>
                 <version>${javassist.version}</version>
             </dependency>
 
@@ -1097,7 +1099,7 @@
             </dependency>
             <dependency>
                 <groupId>javax.validation</groupId>
-                <artifactId>com.springsource.javax.validation</artifactId>
+                <artifactId>validation-api</artifactId>
                 <version>${validation.version}</version>
             </dependency>
             <dependency>
@@ -1218,8 +1220,8 @@
                 <version>${jackson.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.xmlbeans</groupId>
-                <artifactId>com.springsource.org.apache.xmlbeans</artifactId>
+                <groupId>org.apache.servicemix.bundles</groupId>
+                <artifactId>org.apache.servicemix.bundles.xmlbeans</artifactId>
                 <version>${xmlbeans.version}</version>
             </dependency>
 
@@ -1707,7 +1709,6 @@
                                 <bannedDependencies>
                                     <searchTransitive>true</searchTransitive>
                                     <excludes>
-                                        <exclude>commons-logging</exclude>
                                         <exclude>org.apache.commons:com.springsource.org.apache.commons.logging</exclude>
                                         <exclude>aspectj:aspectj*</exclude>
                                         <exclude>hsqldb:hsqldb</exclude>
