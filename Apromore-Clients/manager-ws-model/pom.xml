@@ -27,12 +27,26 @@
         <dependency>
             <groupId>org.apromore.plugin</groupId>
             <artifactId>plugin-api</artifactId>
+            <exclusions>
+                <!-- Published POM may request apromore-manager as default type jar; the
+                     in-reactor module is packaging bundle and is not on SupportLibs. -->
+                <exclusion>
+                    <groupId>org.apromore</groupId>
+                    <artifactId>apromore-manager</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- Canoniser API -->
         <dependency>
             <groupId>org.apromore.plugin</groupId>
             <artifactId>canoniser-api</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apromore</groupId>
+                    <artifactId>apromore-manager</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- Logging -->
