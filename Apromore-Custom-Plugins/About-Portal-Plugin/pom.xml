@@ -33,6 +33,13 @@
     </build>
 
     <dependencies>
+        <!-- Pin OSGi bundle + line-up version: transitive from portal:classes can resolve to jar:1.0 from SupportLibs. -->
+        <dependency>
+            <groupId>org.apromore</groupId>
+            <artifactId>apromore-manager</artifactId>
+            <version>${manager-client.version}</version>
+            <type>bundle</type>
+        </dependency>
         <dependency>
             <groupId>org.apromore</groupId>
             <artifactId>apromore-portal</artifactId>
