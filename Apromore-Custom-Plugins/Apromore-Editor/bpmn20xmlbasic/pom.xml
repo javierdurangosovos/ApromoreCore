@@ -103,6 +103,10 @@
             <version>${jaxb-impl.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-core</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-extra-osgi</artifactId>
             <version>2.2.7-b58</version>
