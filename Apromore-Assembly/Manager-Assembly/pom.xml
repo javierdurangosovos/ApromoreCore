@@ -116,8 +116,8 @@
         </dependency>
 
         <dependency>
-            <groupId>net.sourceforge.cglib</groupId>
-            <artifactId>com.springsource.net.sf.cglib</artifactId>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.cglib</artifactId>
             <scope>provided</scope>
         </dependency>
     </dependencies>
