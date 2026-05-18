@@ -130,7 +130,7 @@
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>copy-http-osgi-bundles</id>
+                        <id>copy-osgi-runtime-bundles</id>
                         <phase>package</phase>
                         <goals>
                             <goal>copy</goal>
@@ -153,6 +153,20 @@
                                     <type>bundle</type>
                                     <overWrite>true</overWrite>
                                     <destFileName>org.apache.httpcomponents.httpcore_${commons.httpclient.version}.jar</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.sun.xml.bind</groupId>
+                                    <artifactId>jaxb-osgi</artifactId>
+                                    <version>${jaxb-impl.version}</version>
+                                    <overWrite>true</overWrite>
+                                    <destFileName>com.sun.xml.bind_${jaxb-impl.version}.jar</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.servicemix.bundles</groupId>
+                                    <artifactId>org.apache.servicemix.bundles.xmlbeans</artifactId>
+                                    <version>${xmlbeans.version}</version>
+                                    <overWrite>true</overWrite>
+                                    <destFileName>org.apache.servicemix.bundles.xmlbeans_${xmlbeans.version}.jar</destFileName>
                                 </artifactItem>
                             </artifactItems>
                         </configuration>

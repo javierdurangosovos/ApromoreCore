@@ -1054,6 +1054,11 @@
                 <artifactId>jaxb-core</artifactId>
                 <version>${jaxb-xjc.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.sun.xml.bind</groupId>
+                <artifactId>jaxb-osgi</artifactId>
+                <version>${jaxb-impl.version}</version>
+            </dependency>
 
             <!-- Commons -->
             <dependency>
