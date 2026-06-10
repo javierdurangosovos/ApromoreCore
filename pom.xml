@@ -1411,14 +1411,10 @@
         </repository>
         <repository>
             <id>EclipseLink Repo</id>
-            <url>http://download.eclipse.org/rt/eclipselink/maven.repo</url>
+            <url>https://download.eclipse.org/rt/eclipselink/maven.repo</url>
             <name>EclipseLink Repo</name>
         </repository>
-        <repository>
-            <id>eclipse-gemini</id>
-            <name>Eclipse Gemini Maven repository</name>
-            <url>http://download.eclipse.org/gemini/mvn/</url>
-        </repository>
+        <!-- Gemini Blueprint is on Maven Central (see gemini.blueprint.version comment) -->
         <!--<repository>-->
         <!--<id>ZK EE Repo</id>-->
         <!--<url>https://maven.zkoss.org/repo/zk/ee</url>-->
@@ -1427,7 +1423,7 @@
         <repository>
             <id>ZK CE</id>
             <name>ZK CE Repository</name>
-            <url>http://mavensync.zkoss.org/maven2</url>
+            <url>https://mavensync.zkoss.org/maven2</url>
         </repository>
         <!--<repository>-->
             <!--<id>flyway-repo</id>-->
@@ -1435,15 +1431,15 @@
         <!--</repository>-->
     </repositories>
     <pluginRepositories>
-        <pluginRepository>
-            <id>flyway-repo</id>
-            <url>https://repo.flywaydb.org/repo</url>
-        </pluginRepository>   
 		<pluginRepository>
 			<id>zkmaven</id>
 			<name>ZK Maven Plugin Repository</name>
-			<url>http://mavensync.zkoss.org/maven2</url>
-		</pluginRepository>        
+			<url>https://mavensync.zkoss.org/maven2</url>
+		</pluginRepository>
+        <!--<pluginRepository>-->
+            <!--<id>flyway-repo</id>-->
+            <!--<url>https://repo.flywaydb.org/repo</url>-->
+        <!--</pluginRepository>-->
     </pluginRepositories>
 
     <build>
