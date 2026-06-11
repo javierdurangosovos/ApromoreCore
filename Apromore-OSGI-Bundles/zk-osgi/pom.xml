@@ -91,12 +91,11 @@
             <groupId>org.zkoss.common</groupId>
             <artifactId>zcommon</artifactId>
         </dependency>
-<!--
         <dependency>
-            <groupId>org.zkoss.common</groupId>
-            <artifactId>zjavassist-osgi</artifactId>
+            <groupId>org.apromore</groupId>
+            <artifactId>javassist-osgi</artifactId>
+            <version>1.0</version>
         </dependency>
--->
         <dependency>
             <groupId>org.zkoss.common</groupId>
             <artifactId>zweb</artifactId>

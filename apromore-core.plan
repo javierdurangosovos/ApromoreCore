@@ -6,6 +6,15 @@
     <artifact type="configuration" name="site" version="0" />
     <artifact type="configuration" name="git" version="0" />
     
+    <!-- Third-party OSGi bundles (must resolve before schemas and portal) -->
+    <artifact type="bundle" name="com.sun.xml.bind.jaxb-osgi" version="[2.2.11, 3.0.0)" />
+    <artifact type="bundle" name="org.apache.httpcomponents.httpclient" version="[4.2.1, 4.3)" />
+    <artifact type="bundle" name="org.apache.httpcomponents.httpcore" version="[4.2.1, 4.3)" />
+    <artifact type="bundle" name="org.apache.servicemix.bundles.xmlbeans" version="[2.4.0, 2.4.1)" />
+    <artifact type="bundle" name="org.apromore.javassist-osgi" version="[1.0.0, 2)" />
+    <artifact type="bundle" name="org.apromore.validation-api-osgi" version="[1.0.0, 2)" />
+    <artifact type="bundle" name="org.apromore.zk-osgi" version="[8.0.0, 10)"/>
+
     <!-- OSGi Libraries -->
     <artifact type="bundle" name="org.apromore.eclipse-collections-osgi" version="[1.0.0, 2)"/>
     <artifact type="bundle" name="org.apromore.hpi-bpt-osgi" version="[1.0.0, 2)"/>
@@ -18,7 +27,6 @@
     <artifact type="bundle" name="org.apromore.prom-widgets-osgi" version="[1.0.0, 2)"/>
     <artifact type="bundle" name="org.apromore.prom-bpmn-osgi" version="[1.0.0, 2)"/>
     <!--<artifact type="bundle" name="org.apromore.prom6-osgi" version="[1.0.0, 2)"/>-->
-    <!--<artifact type="bundle" name="org.apromore.zk-osgi" version="[8.0.0, 10)"/>-->
     <!--<artifact type="bundle" name="org.ini4j.osgi" version="[0.5.0, 2)"/>-->
     <!--<artifact type="bundle" name="org.apromore.jdom2-osgi" version="[2.0.0, 3)"/>-->
     

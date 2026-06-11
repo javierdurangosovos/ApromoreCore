@@ -98,7 +98,8 @@
                                 org.springframework.expression,org.springframework.jdbc,org.springframework.jms,org.springframework.orm,
                                 org.springframework.oxm,org.springframework.transaction,org.springframework.web,org.springframework.web.servlet,
                                 org.springframework.aspects,org.springframework.context.support,commons-httpclient,javax.persistence,
-                                jaxb-api,org.apache.servicemix.bundles.xmlbeans,
+                                jaxb-api,org.apache.servicemix.bundles.xmlbeans,snappy-java,javassist,
+                                apromore-manager,
                             </excludeArtifactIds>
                             <excludeGroupIds>
                                 org.zkoss.zk, org.zkoss.common, org.beanshell
@@ -125,6 +126,20 @@
                             <mainClass>org.apromore.osgihelper.RemoveNonOSGIJars</mainClass>
                             <arguments>
                                 <argument>${deploy.dir}/usr</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>patch-spring-ws-support</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>org.apromore.osgihelper.PatchOptionalImports</mainClass>
+                            <arguments>
+                                <argument>${deploy.dir}/usr</argument>
+                                <argument>spring-ws-support-2.1.0.RELEASE.jar</argument>
                             </arguments>
                         </configuration>
                     </execution>

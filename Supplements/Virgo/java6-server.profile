@@ -47,6 +47,8 @@ org.osgi.framework.system.packages = \
  javax.lang.model.element,\
  javax.lang.model.type,\
  javax.lang.model.util,\
+ com.sun.source.tree,\
+ com.sun.source.util,\
  javax.media.j3d,\
  javax.management,\
  javax.management.loading,\

@@ -66,7 +66,7 @@
                             org.apache.httpcomponents.httpclient;version="[4.2.1,4.3)",
                             org.apache.httpcomponents.httpcore;version="[4.2.1,4.3)",
                             org.apache.servicemix.bundles.xmlbeans;version="[2.4.0,2.4.1)",
-                            com.sun.xml.bind;version="[2.2.11,3.0.0)",
+                            com.sun.xml.bind.jaxb-osgi;version="[2.2.11,3.0.0)",
                             jackson-core-lgpl;version="[1.9.12,2.0.0]",
                             jackson-mapper-lgpl;version="[1.9.12,2.0.0]",
                             org.apromore.manager-ws-model;version="[1.1,1.1]",

@@ -39,6 +39,8 @@
         <include name="hpi-bpt-osgi/target/hpi-bpt-osgi-1.0.jar"/> 
         <include name="eclipse-collections-osgi/target/eclipse-collections-osgi-1.1.jar"/>
         <include name="json-osgi/target/json-osgi-1.0.jar"/>
+        <include name="javassist-osgi/target/javassist-osgi-1.0.jar"/>
+        <include name="validation-api-osgi/target/validation-api-osgi-1.0.jar"/>
         <include name="log-osgi/target/log-osgi-1.1.jar"/>
         <include name="lpsolve-osgi/target/lpsolve-osgi-1.1.jar"/>
         <include name="similaritysearch-osgi/target/similaritysearch-osgi-1.1.jar"/>
@@ -133,6 +135,21 @@
         <copy todir="${core-dir-virgo}/repository/usr" flatten="true" overwrite="true" filtering="true">
             <fileset refid="fileset-repo-text"/>
         </copy>
+    </target>
+
+    <target name="patch-virgo-bundles">
+        <java classname="org.apromore.osgihelper.PatchOptionalImports" fork="true" failonerror="true">
+            <classpath>
+                <pathelement location="${core-dir-extras-build-tools}/target/build-tools-1.1.jar"/>
+            </classpath>
+            <arg value="${core-dir-virgo}/repository/usr"/>
+            <arg value="spring-ws-support-2.1.0.RELEASE.jar"/>
+        </java>
+        <delete>
+            <fileset dir="${core-dir-virgo}/repository/usr">
+                <include name="org.apache.servicemix.bundles.spring-*.jar"/>
+            </fileset>
+        </delete>
     </target>
 
     <!-- Virgo Related -->

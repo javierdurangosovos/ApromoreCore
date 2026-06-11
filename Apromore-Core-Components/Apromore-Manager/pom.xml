@@ -89,6 +89,9 @@
                             org.apromore.apmlog;version="[1.0,2)",
                             org.apromore.apmlog.util;version="[1.0,2)",
                             org.apromore.apmlog.impl;version="[1.0,2)",
+                            !org.springframework.ws.transport.jms,
+                            !org.springframework.ws.transport.jms.*,
+                            org.springframework.*;version="[3.1.0,4.0.0)",
                             *
                         </Import-Package>
                         <Export-Package>
@@ -536,14 +539,6 @@
             <!--<artifactId>ehcache</artifactId>-->
             <!--<version>3.8.1</version>-->
         <!--</dependency>-->
-
-        <dependency>
-            <groupId>org.xerial.snappy</groupId>
-            <artifactId>snappy-java</artifactId>
-            <version>1.1.4</version>
-        </dependency>
-
-
 
         <dependency>
             <groupId>org.apromore</groupId>

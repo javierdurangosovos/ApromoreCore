@@ -36,6 +36,21 @@
             <version>${project.version}</version>
             <type>bundle</type>
         </dependency>
+        <dependency>
+            <groupId>org.apromore</groupId>
+            <artifactId>manager-client</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apromore</groupId>
+            <artifactId>manager-ws-model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apromore</groupId>
+            <artifactId>manager-security</artifactId>
+            <version>${project.version}</version>
+        </dependency>
 <!--
         <dependency>
             <groupId>org.apromore</groupId>
@@ -184,6 +199,7 @@
                             <excludeTransitive>false</excludeTransitive>
                             <!-- Those artifacts are OSGI bundles already in Virgo -->
                             <excludeArtifactIds>
+                                snappy-java,
                                 jaxb-api,
                                 javax.persistence,
                                 logback-classic,
@@ -234,6 +250,20 @@
                             <mainClass>org.apromore.osgihelper.RemoveNonOSGIJars</mainClass>
                             <arguments>
                                 <argument>${deploy.dir}/usr</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>patch-spring-ws-support</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>org.apromore.osgihelper.PatchOptionalImports</mainClass>
+                            <arguments>
+                                <argument>${deploy.dir}/usr</argument>
+                                <argument>spring-ws-support-2.1.0.RELEASE.jar</argument>
                             </arguments>
                         </configuration>
                     </execution>
