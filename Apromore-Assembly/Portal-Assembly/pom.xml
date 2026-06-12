@@ -99,7 +99,7 @@
                                 org.springframework.oxm,org.springframework.transaction,org.springframework.web,org.springframework.web.servlet,
                                 org.springframework.aspects,org.springframework.context.support,commons-httpclient,javax.persistence,
                                 jaxb-api,org.apache.servicemix.bundles.xmlbeans,snappy-java,javassist,
-                                apromore-manager,
+                                apromore-manager,manager-security,manager-client,manager-ws-model,
                             </excludeArtifactIds>
                             <excludeGroupIds>
                                 org.zkoss.zk, org.zkoss.common, org.beanshell

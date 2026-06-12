@@ -91,6 +91,7 @@
                             org.springframework.security.web;version="[3.1.0,4.0)"
                         </Import-Bundle>
                         <Import-Package>
+                            org.springframework.*;version="[3.1.0,4.0.0)",
                             *
                         </Import-Package>
                     </instructions>

@@ -41,6 +41,8 @@
         <include name="json-osgi/target/json-osgi-1.0.jar"/>
         <include name="javassist-osgi/target/javassist-osgi-1.0.jar"/>
         <include name="validation-api-osgi/target/validation-api-osgi-1.0.jar"/>
+        <include name="inject-osgi/target/inject-osgi-1.0.jar"/>
+        <include name="wsdl4j-osgi/target/wsdl4j-osgi-1.0.jar"/>
         <include name="log-osgi/target/log-osgi-1.1.jar"/>
         <include name="lpsolve-osgi/target/lpsolve-osgi-1.1.jar"/>
         <include name="similaritysearch-osgi/target/similaritysearch-osgi-1.1.jar"/>
@@ -138,6 +140,15 @@
     </target>
 
     <target name="patch-virgo-bundles">
+        <copy todir="${core-dir-virgo}/repository/usr" flatten="true" overwrite="true">
+            <fileset dir="${core-dir}/Apromore-Assembly/Manager-Assembly/target/repository/usr">
+                <include name="apromore-manager-*.jar"/>
+                <include name="manager-*.jar"/>
+            </fileset>
+            <fileset dir="${core-dir}/Apromore-Assembly/Portal-Assembly/target/repository/usr">
+                <include name="apromore-portal-*.war"/>
+            </fileset>
+        </copy>
         <java classname="org.apromore.osgihelper.PatchOptionalImports" fork="true" failonerror="true">
             <classpath>
                 <pathelement location="${core-dir-extras-build-tools}/target/build-tools-1.1.jar"/>

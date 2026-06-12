@@ -50,6 +50,8 @@
         <module>Apromore-OSGI-Bundles/json-osgi</module>
         <module>Apromore-OSGI-Bundles/javassist-osgi</module>
         <module>Apromore-OSGI-Bundles/validation-api-osgi</module>
+        <module>Apromore-OSGI-Bundles/inject-osgi</module>
+        <module>Apromore-OSGI-Bundles/wsdl4j-osgi</module>
         <module>Apromore-OSGI-Bundles/similaritysearch-osgi</module>
         <module>Apromore-OSGI-Bundles/zk-osgi</module>
         <module>Apromore-OSGI-Bundles/jgraph-osgi</module>

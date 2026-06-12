@@ -13,6 +13,8 @@
     <artifact type="bundle" name="org.apache.servicemix.bundles.xmlbeans" version="[2.4.0, 2.4.1)" />
     <artifact type="bundle" name="org.apromore.javassist-osgi" version="[1.0.0, 2)" />
     <artifact type="bundle" name="org.apromore.validation-api-osgi" version="[1.0.0, 2)" />
+    <artifact type="bundle" name="org.apromore.inject-osgi" version="[1.0.0, 2)" />
+    <artifact type="bundle" name="org.apromore.wsdl4j-osgi" version="[1.0.0, 2)" />
     <artifact type="bundle" name="org.apromore.zk-osgi" version="[8.0.0, 10)"/>
 
     <!-- OSGi Libraries -->
