@@ -41,6 +41,11 @@
         <value>chiaroscuro_c</value>  <!-- atlantic, breeze, iceblue, iceblue_c, sapphire, silvertail, chiaroscuro_c -->
     </library-property>
 
+    <!-- Ensure the custom theme is registered when running in Virgo/OSGi -->
+    <listener>
+        <listener-class>org.zkoss.theme.chiaroscuro_c.ThemeWebAppInit</listener-class>
+    </listener>
+
   <system-property>
     <name>themex</name>
     <value>themey</value>
